@@ -7,7 +7,7 @@ node {
 notifyBuild('STARTED')
   stage('Git checkout')
   {
-    git branch: 'development', credentialsId: 'aa528cef-cbd8-4ef2-8c34-cb5cff2be464', url: 'https://github.com/kkdevopsb4/maven-web-app-project-kk-funda.git'
+    git branch: 'bugfix', credentialsId: 'aa528cef-cbd8-4ef2-8c34-cb5cff2be464', url: 'https://github.com/kkdevopsb4/maven-web-app-project-kk-funda.git'
   }
     stage('COMPILE')
   {
