@@ -31,7 +31,7 @@ notifyBuild('STARTED')
 
         sh """
             curl -u kkfunda:password \
-            --upload-file /var/lib/jenkins/workspace/jio-Scripted-dev-PL/target/maven-web-application.war \
+            --upload-file /var/lib/jenkins/workspace/MBPL-Jio/target/maven-web-application.war \
             "http://43.204.114.41:8080/manager/text/deploy?path=/maven-web-application&update=true"
         """
     }
